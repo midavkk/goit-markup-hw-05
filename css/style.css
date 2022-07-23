@@ -448,7 +448,7 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--main-title-color);
-  background: #F5F4FA;
+  background: #f5f4fa;
   display: inline-block;
   border: none;
   border-radius: 4px;
@@ -459,8 +459,7 @@ img {
   margin-right: 8px;
 }
 
-.portfolio-btn .current:hover 
-.portfolio-btn .current:focus {
+.portfolio-btn .current:hover .portfolio-btn .current:focus {
   background-color: var(--hero-btn-color);
   color: var(--hero-title-color);
 }
@@ -509,7 +508,7 @@ img {
 .benefits-top-text {
   position: absolute;
   top: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 100%;
@@ -661,8 +660,19 @@ img {
 }
 
 .modal {
-  width: 500px;
-  min-height: 600px;
+  width: 528px;
+  min-height: 581px;
   background-color: #ffffff;
-  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close-icon {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  position: absolute;
+  right: 8px;
+  top: 8px;
 }
