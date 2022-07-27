@@ -327,7 +327,9 @@ img {
 .gallery-item > .gallery-thumb {
   position: absolute;
   top: 224 px;
-  bottom: 0;
+}
+.gallery-thumb {
+  z-index: 1;
 }
 
 .gallery-label {
@@ -341,6 +343,7 @@ img {
   color: #ffffff;
   position: relative;
   bottom: 27px;
+  z-index: 2;
 }
 
 /* ------------team------------ */
