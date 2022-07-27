@@ -724,19 +724,22 @@ img {
   transition: transform 300ms;
 }
 
+.modal-close-btn {
+}
+
 .modal-close-icon {
   width: 30px;
   height: 30px;
   background-color: #ffffff;
-  border: 1px solid;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  border-color: #000000;
   position: absolute;
   right: 8px;
   top: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 6px;
 }
 
 .is-hidden {
