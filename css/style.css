@@ -61,6 +61,19 @@ img {
   margin: -1px;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* ------------WebStudio------------ */
 
 .logo {
@@ -788,7 +801,6 @@ img {
 }
 
 .form-input {
-  /* box-sizing: border-box; */
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -804,6 +816,7 @@ img {
 
 .input-wrap {
   position: relative;
+  outline: none;
 }
 
 .modal-icon {
@@ -813,15 +826,64 @@ img {
   transform: translateY(-50%);
 }
 
+.form-area {
+  margin-bottom: 20px;
+}
+
 textarea {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  padding-left: 16px;
 }
 
 .form-text:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
+}
+
+.form-input:focus + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.form-check {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.input-check {
+  width: 16px;
+  height: 15px;
+}
+
+.check-text {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  display: flex;
+  align-items: center;
+}
+
+.check-text::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+  margin-right: 8.38px;
+}
+
+.input-check:checked + .check-text::before {
+  background-color: var(--accent-color);
+  background-image: url(../img/checked.svg);
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-check:focus + .check-text::before {
+  border-color: var(--accent-color);
 }
