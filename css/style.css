@@ -851,6 +851,8 @@ textarea {
 .form-check {
   display: block;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .input-check {
@@ -865,6 +867,7 @@ textarea {
   line-height: 1.71;
   display: flex;
   align-items: center;
+  margin-right: 4px;
 }
 
 .check-text::before {
@@ -886,4 +889,12 @@ textarea {
 
 .input-check:focus + .check-text::before {
   border-color: var(--accent-color);
+}
+
+.check-terms {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
