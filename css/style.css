@@ -736,11 +736,12 @@ img {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
 }
 
 .footer-wrap {
   position: relative;
-  outline: none;
+  /* outline: none; */
 }
 
 .btn-footer {
@@ -751,12 +752,11 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  padding: 10px 0;
-  margin: 0;
+  padding: 10px 10px 10px 29px;
   border: none;
   border-radius: 4px;
   display: flex;
-  justify-content: center;
+  /* flex-direction: row; */
 }
 
 .send-icon {
