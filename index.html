@@ -452,6 +452,25 @@
             </li>
           </ul>
         </div>
+        <div class="footer-newsletter">
+          <form class="footer-subscribe">
+            <label for="footer-subscribe" class="footer-slogan-title"
+              >Подпишитесь на рассылку</label
+            >
+            <input
+              type="text"
+              class="input-footer"
+              name="footer-subscribe"
+              id="footer-subscribe"
+            />
+            <div class="footer-wrap">
+              <button type="submit" class="btn-footer">Подписаться</button>
+              <svg class="send-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-send"></use>
+              </svg>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -511,14 +530,9 @@
             <label for="privacy" class="check-text"
               >Соглашаюсь с рассылкой и принимаю
             </label>
-            <a
-              href="https://packandgo.com.ua/ru/user-agreement"
-              class="check-terms link"
-            >
-              Условия договора</a
-            >
+            <a href="#" class="check-terms link"> Условия договора</a>
           </div>
-          <button type="submit">Отправить</button>
+          <button type="submit" class="btn-modal">Отправить</button>
         </form>
       </div>
     </div>
